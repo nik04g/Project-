@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Kaushan+Script&family=Marcellus&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <h2>Register</h2>
+    {% if error %}
+        <p style="color: red;text-align:center;">{{ error }}</p>
+    {% endif %}
+
+    <div class="login">
+    <form class="forming" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value="{{ username }}" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value="{{ password }}" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+</div>
+</body>
+</html>

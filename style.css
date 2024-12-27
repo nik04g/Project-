@@ -1,0 +1,185 @@
+body {
+  /* background-image: url('university.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 50%  60%;
+  background-position: 120px 120px; */
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+h2 {
+  text-align: center;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700px;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.login {
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+}
+
+.forming {
+  text-align: center;
+  margin-top: 130px;
+  width: 40%;
+  background-color: rgb(252, 202, 115);
+  box-shadow: 0 4px 8px 0 rgba(118, 114, 114, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.66);
+  padding: 30px 1px;
+  margin: 60px 60px 20px;
+  border-radius: 30%;
+}
+
+div h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700px;
+  font-style: italic;
+  font-size: 30px;
+}
+
+div.polaroid {
+  width: 40%;
+  background-color: rgb(252, 202, 115);
+  box-shadow: 0 4px 8px 0 rgba(118, 114, 114, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.66);
+  padding: 30px;
+  margin: 33px 60px 20px;
+}
+
+.image {
+  height: 500px;
+  border-radius: 50%;
+}
+
+.image:hover {
+    box-shadow: 0 0 2cm 2cm rgb(251, 207, 112);
+}
+.chatbox {
+  background-color: #f9dbaa;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 540px;
+  overflow-y: scroll;
+  padding: 20px;
+  position: fixed;
+  bottom: 35px;
+  right: 75px;
+  width: 530px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  /* border: solid #fab85b; */
+  box-shadow: 0 4px 8px 0 rgba(118, 114, 114, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.66);
+}
+
+.chatbox .header h1 {
+  font-family: 'Nunito', sans-serif;
+  margin-top: 5;
+  font-size: 16px;
+  color: #303030;
+  text-align: start;
+}
+
+.chatbox .messages {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chatbox .messages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chatbox .messages ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.chatbox .messages ul li b {
+  font-weight: bold;
+}
+
+.chatbox .messages ul li.user b {
+  color: #007bff;
+}
+
+.chatbox .messages ul li.bot b {
+  color: #28a745;
+}
+
+.chatbox .input-group {
+  margin-top: 20px;
+  position: relative;
+}
+
+.chatbox .input-group input {
+  width: 95%;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #565;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox .input-group button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border: none;
+  background-color: #7c7c7c;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 550;
+  padding: 8px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chatbox .input-group button:hover {
+  background-color: #0056b3;
+}
+
+.quick-replies {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.quick-reply {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #555;
+  font-size: 10px;
+  font-weight: 550;
+  border: 2px solid #007bff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quick-reply:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.avatar {
+  width: 30%;
+  margin-bottom: 1%;
+
+}
+
+.bot p {
+  font-size: 14px;
+}
